@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .wobble{
+        animation: wobble .5s forwards;
+    }
+
+    @keyframes wobble {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(3deg);
+        }
+        50% {
+            transform: rotate(-3deg);
+        }
+        75% {
+            transform: rotate(3deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+.stroke {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
+.strokeColor:hover {
+    -webkit-text-fill-color: white;
+}
+
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-active {
+    transform: scale(1.1);
+    filter: blur(0);
+}
+
+.card-inactive {
+    filter: blur(2px);
+}
+
+.blur {
+    filter: blur(15px);
+}
+
+.client:hover {
+    fill: #F5981D;
+}
+
+.bounce {
+    animation: bounce 0.5s ease-in;
+}
+
+@keyframes bounce {
+    70% {
+        transform: translateY(0%);
+    }
+    80% {
+        transform: translateY(-15%);
+    }
+    90% {
+        transform: translateY(0%);
+    }
+    95% {
+        transform: translateY(-7%);
+    }
+    97% {
+        transform: translateY(0%);
+    }
+    99% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.SignUp {
+    border: unset;
+    z-index: 1;
+    position: relative;
+    transition: all 500ms;
+    overflow: hidden;
+}
+
+.SignUp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 0 80px 80px 0;
+    background-color: #ff0303;
+    z-index: -1;
+    transition: all 250ms
+}
+
+.SignUp:hover {
+    background-color: #ff0303;
+    
+}
+
+.SignUp:hover::before {
+    width: 120%;
+}
+
+.FaqMore {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .8s;
+    z-index: 1;
+}
+
+.FaqMore::before, .FaqMore::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: white;
+    transition: 800ms ease-in-out;
+}
+
+.FaqMore::before {
+    top: -1em;
+    left: -1em;
+}
+
+.FaqMore::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.FaqMore:hover::before, .FaqMore:hover::after {
+    height: 900px;
+    width: 900px;
+}
+
+.FaqMore:hover {
+    color: rgb(10, 25, 30);
+}
+
+.FaqMore:active {
+    filter: brightness(.8);
+}
+
+/* x-cloak */
+[x-cloak] {
+    visibility: hidden;
+    overflow: hidden;
+}

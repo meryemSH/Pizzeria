@@ -1,4 +1,4 @@
-# Mobdie
+# Pizzeria
 
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/digiton-ma/mobdie/pint.yml?branch=master&label=code%20style&style=flat-square)](https://github.com/digiton-ma/mobdie/actions?query=workflow%3A"pint"+branch%3Amaster)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/digiton-ma/mobdie/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/digiton-ma/mobdie/actions?query=workflow%3Arun-tests+branch%3Amain)

@@ -4,7 +4,7 @@
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/digiton-ma/mobdie/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/digiton-ma/mobdie/actions?query=workflow%3Arun-tests+branch%3Amain)
 
 ## About the app
-Mobdie Educational Center's website.
+Pizzeria "Pizza Near Me" website.
 
 ## Requirements
 
